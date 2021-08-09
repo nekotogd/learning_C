@@ -13,6 +13,7 @@ For now this will mostly consist of example code you can look through or use.
 
 ```c
 #include <stdio.h>
+#include <string.h>
 #define BOOL char
 #define TRUE 1
 #define FALSE 0
@@ -34,7 +35,7 @@ int main()
   {
     printf("I\'m currently learning the language of C!\n");
   }
-  printf(nekoto.hopes);
+  printf(strncat(nekoto.hopes, " are my hopes!", strlen(nekoto.hopes)));
   return 0;
 }
 ```
