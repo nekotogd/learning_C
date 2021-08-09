@@ -35,7 +35,7 @@ int main()
   {
     printf("I\'m currently learning the language of C!\n");
   }
-  printf(strncat(nekoto.hopes, " are my hopes!", strlen(nekoto.hopes)));
+  printf(nekoto.hopes);
   return 0;
 }
 ```
