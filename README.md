@@ -10,3 +10,31 @@ I've been fiddling with Jupyter Notebooks lately, I think that might be a good w
 However I'll only focus on it after I'm done with learning a good chunk on C.
 
 For now this will mostly consist of example code you can look through or use.
+
+```c
+#include <stdio.h>
+#define BOOL char
+#define TRUE 1
+#define FALSE 0
+
+typedef struct
+{
+  int learning;
+  char * hopes;
+} student;
+
+int main()
+{
+  student nekoto;
+  nekoto.learning = TRUE;
+  nekoto.hopes = "Wants to learn the basics of C!";
+  
+  printf("Hi this is Nekoto!\n");
+  if (nekoto.learning)
+  {
+    printf("I\'m currently learning the language of C!\n");
+  }
+  printf(nekoto.hopes);
+  return 0;
+}
+```
